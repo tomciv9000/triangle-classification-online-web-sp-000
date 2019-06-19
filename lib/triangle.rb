@@ -13,5 +13,5 @@ class Triangle
       raise TriangleError
     elsif (@side_1 == @side_2) && (@side2 == @side3)
       :equilateral
-    elsif (@side_1 == @side_2)
+    elsif (@side_1 == @side_2) && (@side2 != @)
 end

@@ -11,10 +11,15 @@ class Triangle
   def kind 
     if (@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)
       raise TriangleError
-    elsif (@side_1 == @side_2) && (@side2 == @side3)
+    elsif (@side_1 == @side_2) && (@side_2 == @side_3)
       :equilateral
-    elsif ((@side_1 == @side_2) || (@side2 == @side3) || (@side1 == @side3))
+    elsif ((@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3))
       :isoceles
-    elsif (@side+)
+    elsif ((@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3))
+      :scalene
+    end
+  end
+  
+  
       
 end
